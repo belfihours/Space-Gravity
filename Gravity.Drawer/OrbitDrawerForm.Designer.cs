@@ -1,6 +1,6 @@
 ﻿namespace Gravity.Drawer
 {
-    partial class Form1
+    partial class OrbitDrawerForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -131,7 +131,7 @@
             Controls.Add(panel1);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
+            Load += OrbitDrawerForm_Load;
             panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
