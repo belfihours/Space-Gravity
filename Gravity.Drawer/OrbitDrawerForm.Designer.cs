@@ -32,7 +32,6 @@
             btn_zoom_out = new Button();
             btn_zoom_in = new Button();
             btn_heliocenter = new Button();
-            btn_swap = new Button();
             btn_start_ast = new Button();
             btn_start = new Button();
             btn_stop = new Button();
@@ -45,7 +44,6 @@
             panel1.Controls.Add(btn_zoom_out);
             panel1.Controls.Add(btn_zoom_in);
             panel1.Controls.Add(btn_heliocenter);
-            panel1.Controls.Add(btn_swap);
             panel1.Controls.Add(btn_start_ast);
             panel1.Controls.Add(btn_start);
             panel1.Location = new Point(12, 12);
@@ -83,16 +81,6 @@
             btn_heliocenter.UseVisualStyleBackColor = true;
             btn_heliocenter.Click += btn_heliocenter_Click;
             // 
-            // btn_swap
-            // 
-            btn_swap.Location = new Point(337, 3);
-            btn_swap.Name = "btn_swap";
-            btn_swap.Size = new Size(75, 23);
-            btn_swap.TabIndex = 2;
-            btn_swap.Text = "SWAP";
-            btn_swap.UseVisualStyleBackColor = true;
-            btn_swap.Click += btn_swap_Click;
-            // 
             // btn_start_ast
             // 
             btn_start_ast.Location = new Point(136, 3);
@@ -101,7 +89,7 @@
             btn_start_ast.TabIndex = 1;
             btn_start_ast.Text = "Start With Asteroids";
             btn_start_ast.UseVisualStyleBackColor = true;
-            btn_start_ast.Click += button1_Click;
+            btn_start_ast.Click += button_asteroids_Click;
             // 
             // btn_start
             // 
@@ -141,7 +129,6 @@
         private Panel panel1;
         private Button btn_start;
         private Button btn_start_ast;
-        private Button btn_swap;
         private Button btn_heliocenter;
         private Button btn_zoom_out;
         private Button btn_zoom_in;

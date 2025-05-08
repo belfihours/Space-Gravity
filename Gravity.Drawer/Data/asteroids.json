@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Asteroid1",
+    "size": 6,
+    "mass": 3.989e30,
+    "color": "White",
+    "position": {
+      "x": -7.788e11,
+      "y": -7.788e11
+    },
+    "speed": {
+      "x": 13000,
+      "y": 13720
+    }
+  },
+  {
+    "name": "Asteroid2",
+    "size": 6,
+    "mass": 3.989e17,
+    "color": "White",
+    "position": {
+      "x": 7.788e11,
+      "y": -7.788e11
+    },
+    "speed": {
+      "x": -13720,
+      "y": 13720
+    }
+  }
+]

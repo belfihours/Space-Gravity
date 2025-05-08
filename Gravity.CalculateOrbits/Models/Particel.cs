@@ -8,7 +8,7 @@ namespace Gravity.CalculateOrbits.Models
         public int Size { get; set; }
         public double Mass { get; set; }
         public Color Color { get; set; }
-        public Coordinate Pos { get; set; } = new();
+        public Coordinate Position { get; set; } = new();
         public Coordinate Speed { get; set; } = new();
         public List<Coordinate> Accelerations { get; set; } = new();
         public Coordinate TotalAcceleration => new(Accelerations.Sum(x => x.X), Accelerations.Sum(y => y.Y));
@@ -19,7 +19,7 @@ namespace Gravity.CalculateOrbits.Models
             Size = size;
             Mass = mass;
             Color = color;
-            Pos = pos;
+            Position = pos;
             Speed = speed;
         }
 
@@ -27,9 +27,9 @@ namespace Gravity.CalculateOrbits.Models
         public void UpdateParticel(int t, List<Particel> particels)
         {
             // change position
-            double posX = GetPosition(Pos.X, Speed.X, TotalAcceleration.X, t);
-            double posY = GetPosition(Pos.Y, Speed.Y, TotalAcceleration.Y, t);
-            Pos.Update(posX, posY);
+            double posX = GetPosition(Position.X, Speed.X, TotalAcceleration.X, t);
+            double posY = GetPosition(Position.Y, Speed.Y, TotalAcceleration.Y, t);
+            Position.Update(posX, posY);
 
             // change speed
             double speedX = GetSpeed(Speed.X, TotalAcceleration.X, t);
@@ -42,7 +42,7 @@ namespace Gravity.CalculateOrbits.Models
             {
                 if (particel.Name != Name)
                 {
-                    SetAcceleration(particel.Mass, particel.Pos);
+                    SetAcceleration(particel.Mass, particel.Position);
                 }
             }
 
@@ -50,9 +50,9 @@ namespace Gravity.CalculateOrbits.Models
 
         private void SetAcceleration(double m2, Coordinate pos2)
         {
-            var distance = GetDistance(Pos, pos2);
-            var accX = GetAcceleration(Pos.X, pos2.X, m2, distance);
-            var accY = GetAcceleration(Pos.Y, pos2.Y, m2, distance);
+            var distance = GetDistance(Position, pos2);
+            var accX = GetAcceleration(Position.X, pos2.X, m2, distance);
+            var accY = GetAcceleration(Position.Y, pos2.Y, m2, distance);
             Accelerations.Add(new(accX, accY));
         }
 

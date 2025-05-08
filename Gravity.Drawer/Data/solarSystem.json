@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Sun",
+    "size": 6,
+    "mass": 1.98847e30,
+    "color": "Yellow",
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "speed": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "name": "Mercury",
+    "size": 2,
+    "mass": 3.3010e23,
+    "color": "Purple",
+    "position": {
+      "x": 4.755e10,
+      "y": 0
+    },
+    "speed": {
+      "x": 0,
+      "y": -47360
+    }
+  },
+  {
+    "name": "Venus",
+    "size": 2,
+    "mass": 4.867e24,
+    "color": "Blue",
+    "position": {
+      "x": 1.080e11,
+      "y": 0
+    },
+    "speed": {
+      "x": 0,
+      "y": -35020
+    }
+  },
+  {
+    "name": "Earth",
+    "size": 3,
+    "mass": 5.972e24,
+    "color": "Green",
+    "position": {
+      "x": 1.521e11,
+      "y": 0
+    },
+    "speed": {
+      "x": 0,
+      "y": -29780
+    }
+  },
+  {
+    "name": "Moon",
+    "size": 2,
+    "mass": 0.07346e24,
+    "color": "Gray",
+    "position": {
+      "x": 1.5210038e14,
+      "y": 0
+    },
+    "speed": {
+      "x": 0,
+      "y": -30802
+    }
+  },
+  {
+    "name": "Mars",
+    "size": 4,
+    "mass": 6.39e23,
+    "color": "Red",
+    "position": {
+      "x": 2.270e11,
+      "y": 0
+    },
+    "speed": {
+      "x": 0,
+      "y": -24080
+    }
+  },
+  {
+    "name": "Jupiter",
+    "size": 5,
+    "mass": 1.898e27,
+    "color": "Orange",
+    "position": {
+      "x": 7.788e11,
+      "y": 0
+    },
+    "speed": {
+      "x": 0,
+      "y": -13060
+    }
+  }
+]
